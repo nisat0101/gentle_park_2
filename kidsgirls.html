@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPark</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+
+
+  <!-- font awesome icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://kit.fontawesome.com/d1728c9d7d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    /* header section  */
+    * {
+      margin: 0px;
+    }
+
+    .header {
+      background-color: #c6af9d;
+      letter-spacing: 1px;
+      text-transform: ;
+      font-size: 12px;
+      padding: 5px 20px;
+      display: block;
+      font-weight: 650;
+    }
+
+    /* navbar section */
+    .navbar {
+      background-color: ;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 13px;
+
+
+
+
+
+    }
+
+    /* Hover dropdown */
+    .hover-dropdown .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .hover-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      color: #000;
+      padding: 0.5rem 1rem;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f8f9fa;
+    }
+
+    .navbarmain {
+      background-color: #ffffff;
+    }
+
+    /* main navbar section  */
+
+    .logo-img {
+
+      width: 14rem;
+      height: auto;
+
+    }
+
+    .mainnavbar {
+      font-size: 14px;
+
+      display: block;
+      font-weight: 700;
+      background-color: #ffffff;
+    }
+
+    #mainnavbar {
+      font-size: 14px;
+
+      display: block;
+      font-weight: 700;
+      background-color: #ffffff;
+    }
+
+    .style {
+      background-color: ;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 750;
+    }
+
+    /* card section */
+    .menssection {
+      background-color: #ffffff;
+    }
+
+    .card:hover .hover-opacity {
+      opacity: 3 !important;
+    }
+
+
+    /* .h6{
+    color: #000;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+  } */
+    .p {
+      color: #c01515;
+      font-size: 1em;
+      line-height: 1.2;
+      margin-bottom: 0;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 800;
+    }
+
+
+
+
+
+
+    /* END */
+    .section_paragraph {
+      background-color: ;
+      letter-spacing: 1px;
+      text-transform: ;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .womenssection {
+      background-color: #f3f2f1
+    }
+
+    .kidssection {
+      background-color: #ffffff
+    }
+
+
+
+    /* footer */
+    /* first  */
+
+    .footertop a {
+      font-family: "Poppins", Helvetica, Tahoma, Arial, serif;
+      text-decoration: none;
+      color: #555555;
+      font-size: medium;
+      font-weight: bolder;
+    }
+
+    .footertop p {
+      font-size: 13px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: "Poppins", Helvetica, Tahoma, Arial, serif;
+      color: #424242;
+      font-weight: 400
+    }
+
+
+    /* footersecond*/
+
+
+    .newsletter {
+
+      font-weight: 400;
+      margin-bottom: 0;
+      color: #000;
+    }
+
+    .footersecond {
+      background-color: #f9f9f9;
+
+    }
+
+    .footerthird a {
+      text-decoration: none;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 500;
+    }
+
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 4px;
+      text-decoration: none;
+      opacity: ;
+      pointer-events: auto;
+      transition: opacity 0.3s ease;
+      user-select: none;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .scroll-top-btn:hover {
+      opacity: 1;
+      background-color: #222;
+      /* slightly lighter on hover */
+    }
+
+
+
+     /* hover section  */
+
+
+
+     
+   .nav-link:hover{
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+   .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  h6:hover{
+    text-decoration: underline;
+  }
+  .footerall a:hover{
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+
+<body>
+  <!-- header section -->
+  <section class="header">
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-12 text-center ">
+          <a href="#" class="text-decoration-none text-dark ">Shop now and save! Get 10% OFF on all online purchase
+            only-limited time offer.</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- navbar section -->
+
+  <nav class="navbar bg-light px-3">
+    <div class="container-fluid d-flex justify-content-between align-items-center navsection">
+      <a class="navbar-brand" href="#"></a>
+
+
+      <div class="d-none d-lg-flex gap-3 me-4">
+        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link" href="#">Track order</a>
+      </div>
+
+      <div class="hover-dropdown position-relative d-lg-none">
+        <i class="bi bi-person fs-4"></i>
+        <div class="dropdown-menu">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- main navbar section -->
+
+
+  <nav class="navbar navbar-expand-lg bg-light mainnavbar container-fluid m-0">
+    <div class="container-fluid d-flex align-items-center justify-content-between" id="mainnavbar">
+
+      <!-- Left: Toggler + Logo -->
+      <div class="d-flex align-items-center">
+        <!-- Toggler Button -->
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html" target="_self">
+          <img src="images/logo.gif" alt="Gentle Park" class="logo-img">
+        </a>
+      </div>
+
+      <!-- Center: Navbar links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-dark" href="men.html" target="_self">Men</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="women.html" target="_self">Women</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="kids.html" target="_self">Kids</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="index.html" target="_self">Summer Collection</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="allproducts.html" target="_self">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Icons -->
+      <div class="d-flex align-items-center gap-3">
+        <h4 class="mb-0"><i class="bi bi-search"></i></h4>
+        <h4 class="mb-0"><i class="bi bi-bag"></i></h4>
+      </div>
+
+    </div>
+  </nav>
+  <!-- banner section -->
+  <!-- <div class="container-fluid bg-white m-0 p-0">
+  <div class="row m-0 p-0">
+    <div class="col-12 p-0">
+      <a href="men.html" target="_self" class="d-block">
+        <img src="images/kidssection/Kids-Banner Web.jpg" alt="sale" class="img-fluid w-100 vh-100" style="object-fit: cover;">
+      </a>
+    </div>
+  </div> -->
+
+  <div class="col-12">
+    <h4 class="text-center mt-0 mb-3 px-6 py-2" style="background-color: #000; color: #f8f9fa;">
+      Kids Girl
+    </h4>
+  </div>
+</div>
+
+  <!-- style -->
+  
+
+  <!-- card section -->
+                                                            <!-- kids section -->
+
+  <section>
+    <div class="container-fluid menssection m">
+
+      <!-- <div class="row ">
+        <div class="col-12 mt-4 p-0 g-0 section_paragraph">
+          <h3 class="text-center  m-1 p-1 g-0"> Kids Section</h3>
+          <p class="text-center m-1 p-1">Grab these new items before they are gone!</p>
+        </div>
+      </div> -->
+
+      <div class="container my-5">
+        <div class="row g-3">
+          <!-- Card 1 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="card border-1 rounded-0 position-relative overflow-hidden ">
+              <div class="position-relative">
+                <img src="images/kidssection/kidsgirls/frok.jpg" class="card-img-top shadow-sm" alt="Product 1">
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-75 opacity-0 hover-opacity"
+                  style="transition: 0.3s;">
+                  <button class="btn btn-light px-3">Quick View</button>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <p class="card-title mb-1"><h6>Girls Fork 5years and above</h6></p>
+                <!-- <p class="card-text text-danger fw-semibold"> <span class="text-decoration-line-through  text-black   
+            ">TK.1500</span> TK.990</p> -->
+
+              </div>
+            </div>
+          </div>
+
+
+         >
+             
+
+
+
+          
+
+
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col12 text-center mt-3 mb-3 px-4 py-2 ">
+          <button class="btn btn-dark">View all</button>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+ 
+
+  <!-- footer -->
+  <section class="footertop py-4  footer " style="background-color: #e7e7e7;">
+    <div class="container-fluid ">
+      <div class="row d-flex justify-content-center align-items-center text-center ">
+
+        <!-- part one -->
+        <div class="col-lg-3 col-md-6 mb-3 ">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-end ">
+              <i class=" fa-solid fa-truck fs-1" style="font-size: 50px;color: grey"></i>
+            </div>
+            <div class="col-8 ">
+              <a href="#">Money Back</a>
+              <p class="mb-0">ISD Delivery Charge 100 & OSD Delivery Charge 150 Taka !</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- part two -->
+        <div class="col-lg-3 col-md-6 mb-3 ">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-end  ">
+              <i class="fa fa-money fs-1" style="font-size: 46px;color: grey;"></i>
+            </div>
+            <div class="col-8 ">
+              <a href="#">Money Back</a>
+              <p class="mb-0">ISD Delivery Charge 100 & OSD Delivery Charge 150 Taka !</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- part three -->
+        <div class="col-lg-3 col-md-6 mb-3 ">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-end  ">
+              <i class="fa fa-lock" style="font-size: 50px;color: grey;"></i>
+            </div>
+            <div class="col-8">
+              <a href="#">Money Back</a>
+              <p class="mb-0">ISD Delivery Charge 100 & OSD Delivery Charge 150 Taka !</p>
+            </div>
+          </div>
+        </div>
+        <!-- part four -->
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-end ">
+              <i class="fa fa-percent" style="font-size: 26px;color: grey;border:1px solid #ccc; padding:10px;"></i>
+            </div>
+            <div class="col-8 ">
+              <a href="#">Money Back</a>
+              <p class="mb-0">ISD Delivery Charge 100 & OSD Delivery Charge 150 Taka !</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footersecond -->
+  <section>
+    <div class="container-fluid footersecond p-4">
+      <div class="row align-items-center text-center text-lg-start">
+
+        <!-- Left: Text -->
+        <div class="col-12 col-lg-3 mb-3 mb-lg-0 p-4">
+          <p class="mb-0">
+            Sign up for <br>
+            <b>Newsletter</b>
+          </p>
+        </div>
+
+        <!-- Center: Email Form -->
+        <div class="col-12 col-lg-6 mb-3 mb-lg-0 p-3">
+          <form class="d-flex justify-content-center justify-content-lg-start w-100" role="search">
+            <input class="form-control form-control-sm rounded-0 w-50" type="email" placeholder="Email address"
+              aria-label="Email">
+            <button class="btn btn-dark btn-sm rounded-0" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div class="col-12 col-lg-3">
+          <div class="d-flex justify-content-center justify-content-lg-end gap-3">
+            <i class="bi bi-facebook fs-5"></i>
+            <i class="bi bi-instagram fs-5"></i>
+            <i class="bi bi-youtube fs-5"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- foooter third  -->
+  <section class="footerthird ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <h5> Categories</h5>
+          <a href="#">Men</a><br>
+          <a href="#">Women</a><br>
+          <a href="#">Kids</a><br>
+          <a href="#">Voucher</a>
+        </div>
+        <div class="col-2">
+          <h5> Accounts</h5>
+          <a href="#">My accounts</a>
+        </div>
+        <div class="col-2">
+          <h5> Quick Links</h5>
+          <a href="#">Store Location</a><br>
+          <a href="#">Shipping & Returns</a><br>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Terms & Conditions <br>
+          </a>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-end ">
+              <i class="fa-sharp-duotone fa-solid fa-comments fs-1"></i>
+            </div>
+            <div class="col-8 ">
+              <a href="#"><strong>We offer dedicated support</strong> </a><br>
+              <span>10:00 am - 7:00 pm (Except Friday & Public Holiday)</span>
+            </div>
+          </div>
+          <div class="row p-3">
+            <div class="col-4 d-flex align-items-center justify-content-end ">
+              <i class="fa-sharp-duotone fa-solid fa-headphones fs-1"></i>
+            </div>
+            <div class="col-8 ">
+              <a href="#"><strong>+880 1788999000</strong> </a><br>
+              <a href="#"><strong>+880 1788999000</strong> </a><br>
+              <a href="#"><strong>+880 1788999000</strong> </a><br>
+              <span>looking for answers call us now</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-12">
+              <h6>
+                Office Address
+              </h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p>
+                Ahmed Tower (9th Floor), 28 & 30, Kamal Ataturk Avenue, Banani C/A, Dhaka-1213
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+  </section>
+  <!-- foooter four  -->
+  <section class="foooterfour  ">
+    <div class="container-fluid ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-6">
+          <a href="#"><img src="images/payment.jpg" alt="payment"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <a href="#top" class="scroll-top-btn" aria-label="Scroll to top">
+    ↑
+  </a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
